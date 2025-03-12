@@ -1,0 +1,26 @@
+package lambdas;
+
+import java.util.function.Function;
+
+public class Desafio {
+
+	public static void main(String[] args) {
+		
+		Produto p = new Produto("iPad", 3235.89, 0.13);
+		
+		/*
+		 * 1. A partir do produto calcular o preco real (com desconto) OK
+		 * 2. Imposto Municipal: >= 2500 (8,5%)/ < 2500 (Isento) OK
+		 * 3. Frete: >= 3000 (100)/ < 3000 (50)
+		 * 4. Arredondar: Deixar com duas casas decimais
+		 * 5. Formatar: R$1234,56
+		 * */
+		
+		Function<Produto, Double> precoFinal = p1 -> p1.preco - (p1.preco * p1.desconto);
+		Function<Double, String> imposto = preco -> preco >= 2500 ? "Imposto de: R$" + preco * 0.085 : "Isento de imposto";
+		Function<Double, String> frete = preco -> preco >= 3000 ? "Frete é de: R$ " + 100 : "Frete é de: R$ " + 50;
+		
+		System.out.println(precoFinal.andThen(imposto).andThen(frete).apply(p));
+		
+	}
+}

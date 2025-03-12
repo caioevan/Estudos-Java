@@ -1,0 +1,17 @@
+package streams;
+
+public class Clientes {
+
+	final String nome;
+	final boolean devendo;
+	final Double divida;
+	
+	public Clientes(String nome, boolean devendo, Double divida) {
+		this.nome = nome;
+		this.devendo = devendo;
+		this.divida = divida;
+	}
+	
+	
+	
+}
