@@ -31,5 +31,7 @@ public class Reduce3 {
 						.reduce(new Media(), calcularMedia, combinarMedia);
 		
 		System.out.println("A média da turma é " + media.getValor());
+		
+		System.out.println("teste");
 	}
 }
