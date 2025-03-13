@@ -2962,3 +2962,60 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.core 4 0 2025-03-12 20:32:53.293
+!MESSAGE An exception occurred during push on URI https://github.com/caioevan/Estudos-Java: https://github.com/caioevan/Estudos-Java: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/caioevan/Estudos-Java: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:694)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:636)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:540)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1555)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-03-12 20:32:53.297
+!MESSAGE Can't connect to any repository: https://github.com/caioevan/Estudos-Java (https://github.com/caioevan/Estudos-Java: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2025-03-12 20:37:49.265
+!MESSAGE An exception occurred during push on URI https://github.com/caioevan/Estudos-Java: https://github.com/caioevan/Estudos-Java: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/caioevan/Estudos-Java: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:694)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:636)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:540)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1555)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-03-12 20:37:49.266
+!MESSAGE Can't connect to any repository: https://github.com/caioevan/Estudos-Java (https://github.com/caioevan/Estudos-Java: not authorized)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-03-12 20:38:28.953
+!MESSAGE close() called when useCnt is already zero for Repository[C:\Users\bela-\git\Estudos-Java\.git]
+
+!ENTRY org.eclipse.egit.core 4 0 2025-03-12 20:49:21.211
+!MESSAGE An exception occurred during push on URI https://github.com/caioevan/Estudos-Java: https://github.com/caioevan/Estudos-Java: git-receive-pack not permitted on 'https://github.com/caioevan/Estudos-Java/'
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/caioevan/Estudos-Java: git-receive-pack not permitted on 'https://github.com/caioevan/Estudos-Java/'
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:701)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:636)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:540)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1555)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-03-12 20:49:21.212
+!MESSAGE Can't connect to any repository: https://github.com/caioevan/Estudos-Java (https://github.com/caioevan/Estudos-Java: git-receive-pack not permitted on 'https://github.com/caioevan/Estudos-Java/')
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-03-12 20:50:31.207
+!MESSAGE close() called when useCnt is already zero for Repository[C:\Users\bela-\git\Estudos-Java\.git]
