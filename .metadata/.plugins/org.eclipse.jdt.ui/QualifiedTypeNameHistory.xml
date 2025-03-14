@@ -34,11 +34,13 @@
     <fullyQualifiedTypeName name="streams.Clientes"/>
     <fullyQualifiedTypeName name="streams.Produto"/>
     <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
-    <fullyQualifiedTypeName name="streams.Aluno"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
     <fullyQualifiedTypeName name="java.util.function.Function"/>
     <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
     <fullyQualifiedTypeName name="java.util.function.BinaryOperator"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="streams.Aluno"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>
