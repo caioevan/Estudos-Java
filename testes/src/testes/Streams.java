@@ -1,24 +1,30 @@
 package testes;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.function.Predicate;
 
 public class Streams {
 
 	public static void main(String[] args) {		
+		List<Integer> rangeNumeros = new ArrayList<Integer>();
 		
-		String frase1 = "O cria beijou sua mãe";
-		String frase2 = "Sua mãe";
+		AddNumeros(rangeNumeros);
 		
-		System.out.println(subtrairTexto(frase1, frase2));
-
+		System.out.println(rangeNumeros);
+		
+		Predicate<Integer> pares = n -> n%2 ==0;
+		
+		rangeNumeros.stream()
+			.filter(pares)
+			.forEach(System.out::println);
 	}
 	
-	public static String subtrairTexto (String s1, String s2) {
-		String frase1 = s1.toLowerCase();
-		String frase2 = s2.toLowerCase();
-		
-		if(frase1.contains(frase2)) {
-			return frase1.replace(frase2, "");
+	public static void AddNumeros (List<Integer> list) {
+		Random rand = new Random();
+		for (int i = 0; i < 10; i++) {
+			list.add(rand.nextInt(31));
 		}
-		return null;
 	}
 }
