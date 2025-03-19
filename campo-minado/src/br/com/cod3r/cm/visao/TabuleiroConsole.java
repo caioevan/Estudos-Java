@@ -43,7 +43,7 @@ public class TabuleiroConsole {
 
 	private void cicloDoJogo() {
 		try {
-			while (tabuleiro.objetivoAlcancado()) {
+			while (!tabuleiro.objetivoAlcancado()) {
 				System.out.println(tabuleiro);
 				
 				String digitado = capturarValorDigitado("Digite(x, y): ");
@@ -58,7 +58,7 @@ public class TabuleiroConsole {
 					tabuleiro.alterarMarcacao(xy.next(), xy.next());
 				}
 			}
-			
+			System.out.println(tabuleiro);
 			System.out.println("Você ganhou!");
 		} catch (ExplosaoException e) {
 			System.out.println(tabuleiro);

@@ -44,9 +44,9 @@ public class Tabuleiro {
 	}
 	
 	private void gerarCampos() {
-		for (int linnha = 0; linnha < linhas; linnha++) {
+		for (int linha = 0; linha < linhas; linha++) {
 			for (int coluna = 0; coluna < colunas; coluna++) {
-				campos.add(new Campo(linnha, coluna));
+				campos.add(new Campo(linha, coluna));
 			}
 		}
 	}
@@ -79,17 +79,30 @@ public class Tabuleiro {
 	}
 	
 	public String toString() {
-		StringBuilder sb = new StringBuilder();
+StringBuilder sb = new StringBuilder();
+		
+		sb.append("  ");
+		for (int c = 0; c < colunas; c++) {
+			sb.append(" ");
+			sb.append(c);
+			sb.append(" ");
+		}
+		
+		sb.append("\n");
+		
 		int i = 0;
 		for (int l = 0; l < linhas; l++) {
+			sb.append(l);
+			sb.append(" ");
 			for (int c = 0; c < colunas; c++) {
-				sb.append(" ");
+				sb.append(" ");				
 				sb.append(campos.get(i));
 				sb.append(" ");
 				i++;
 			}
 			sb.append("\n");
 		}
+		
 		return sb.toString();
 	}
 	
